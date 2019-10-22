@@ -1,6 +1,6 @@
 {
   "name": "kleebot",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A very good kleeborp related bot.",
   "main": "bot.js",
   "author": "Quantix",
