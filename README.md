@@ -1,5 +1,3 @@
-# Discord Bot Boilerplate
-Starting code to help you get your bot going. Comes with a rudimentary command handler, and SQL support with Sequelize.
+# Kleebot
 
-## Command Handler
-Commands go in the `commands` folder, supports aliases.
+He will rule us all. He is our lord. Our saviour. THE ONE TRUE GOD. BURN ALL THE HERETICS!  
