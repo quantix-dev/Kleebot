@@ -1,0 +1,14 @@
+{
+  "name": "kleebot",
+  "version": "0.1.3",
+  "description": "A very good kleeborp related bot.",
+  "main": "bot.js",
+  "author": "Quantix",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "mysql2": "^1.5.3",
+    "node-opus": "^0.3.3",
+    "sequelize": "^4.37.6",
+    "ytdl-core-discord": "^1.0.3"
+  }
+}
