@@ -6,9 +6,7 @@ module.exports.run = async (bot, message, args) => {
 	const embed = new Discord.RichEmbed()
 		.setTitle("Kleebot Help")
 		.setThumbnail(bot.user.displayAvatarURL)
-		.setDescription("Kleebot is a unique and fun discord bot that has many features ranging from music to memes. ~~                                               ~~")
-		.addField("**-help**","Shows this menu and has all of the commands in this bot.")
-		
+		.setDescription("Kleebot is a unique and fun discord bot that has many features ranging from music to memes. ~~                                               ~~")		
 		.addField("__Music Commands__", 
 			"**-join**\n Joins the voice channel you're in.\n\
 			**-play <url> [-o/-n]**\n Plays the URL in your voice channel. Do -join first.\n\
