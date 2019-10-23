@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
 		.setDescription("Kleebot is a unique and fun discord bot that has many features ranging from music to memes. ~~                                               ~~")		
 		.addField("__Music Commands__", 
 			"**-join**\n Joins the voice channel you're in.\n\
-			**-play <url> [-o/-n]**\n Plays the URL in your voice channel. Do -join first.\n\
+			**-play <url>**\n Plays the URL in your voice channel. Do -join first.\n\
 			**-leave**\n Leaves the voice channel and stops the audio.\
 		")
 		.setColor([25,175,25])
