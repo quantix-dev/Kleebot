@@ -1,12 +1,29 @@
 {
   "name": "kleebot",
-  "version": "0.1.6",
-  "description": "The development branch of kleebot dev.",
+  "version": "0.3.6",
+  "description": "A very good kleeborp related bot.",
   "main": "bot.js",
   "author": "Quantix",
+  "engines": {
+    "node": "12.x",
+    "npm": "*"
+  },
   "dependencies": {
-    "discord.js": "^11.5.1",
+    "bufferutil": "^4.0.0",
+    "child_process": "^1.0.2",
+    "debug": "^4.1.1",
+    "discord.js": "^11.6.1",
+    "dotenv": "^8.2.0",
+    "ffmpeg": "0.0.4",
+    "fs": "0.0.1-security",
     "node-opus": "^0.3.3",
-    "ytdl-core-discord": "^1.0.3"
+    "opusscript": "0.0.7",
+    "prism-media": "^1.2.1",
+    "uws": "^100.0.1",
+    "ytdl-core-discord": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js"
   }
 }

@@ -5,9 +5,5 @@
 		"host": "",
 		"password": "",
 		"dialect": "mysql"
-	},
-	"bot": {
-		"token": "NjM2MjIwNDczODUxNzcyOTQx.Xa-WuA.r1V6KOJX7cWYCbLza00nIgaLBWA",
-		"prefix": "~"
 	}
 }
