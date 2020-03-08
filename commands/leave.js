@@ -1,5 +1,5 @@
 /*    
-	announce.js - Pings an unpingable role with a specified message by a user.
+	leave.js - Leaves the current voice channel and disconnects the music.
 	
     Copyright (C) 2020  QuantixOfficial
     This program is free software: you can redistribute it and/or modify
@@ -15,32 +15,24 @@
 */
  
 var connectionX = null
+const langManager = require("../langManager.js")
 const Discord = require("discord.js")
 
 module.exports.run = async (bot, message, args) => {
-	// Code in here.
-	var guildRoles = message.guild.roles
-	var chosenRole = guildRoles.get(args[0])
-	
-	if (message.author.tag != ("Quantix#0781")) {
-    		message.channel.send("You are not QUanTIx");
-    		return;
-  	}
-
-	if (chosenRole) {
-		chosenRole.setMentionable(true, `${message.author.tag} wants to announce a message.`)
-  			.catch(console.error)
-
-		args.shift()
-		message.channel.send(`**[Announcement by <@${message.author.id}>]** <@&${chosenRole.id}>\n` + args.join(" "))
-			.then(chosenRole.setMentionable(false, `${message.author.tag}'s announcement done.`).catch(console.error))
-	}
+	// Code in here. 
+    if (message.guild.voiceConnection != null) {
+		message.guild.voiceConnection.disconnect()
+        message.channel.send("ME NL E E A V E NOW!!");
+        global.gc();
+    } else {
+        message.channel.send("ME NOT IN VOICECHEN STOP TRY MAKE ME LOOK NOT SMARTT");
+    }
 }
 
 module.exports.help = {
-	name: "announce",
+	name: "leave",
 
-	category: "other",
-	commandHelp: "Announce a message to a role.",
-	cooldown: 20
+	category: "music",
+  	commandHelp: "[-leave] kleebot will leave the vc! this good idea.",
+  	cooldown: 4
 }
