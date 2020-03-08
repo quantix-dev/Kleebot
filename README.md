@@ -1,4 +1,4 @@
-# Kleebot - Master Branch
+# Kleebot - Dev Branch
 
 ## What is kleebot?
 Kleebot is a simple bot that I am using to train and sculpt my discord.js skills.
