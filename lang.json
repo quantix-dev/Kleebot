@@ -1,0 +1,23 @@
+{
+    "messages": {
+        "firstMessage": ":cursedJoy: **Neyoh!**\n~~  ~~ Me thanks you for invite me to server!\n~~  ~~ u do `-help` for big help!",
+
+        "joinMessages": [
+            "I just poopood myselffyy!! :poop:",
+            "Me say hola to the cola.!",
+            "NeyoOHO Call home I cANt odoo!!",
+            "HeLLO ME Here NOW!!",
+            "HahEHE.",
+            "OH nOOo my NapPY iS full of big stnker!! :trashMan: :poop:",
+            "ÆUGH :blowfish:",
+            "Oi YOu You GoiNG to Do thE BIg bingo!!!",
+            "Me Say HOlA tO THe French People!!",
+            "MEin ufO Has bE Stuck in the big blue :binge:",
+            "Will DiscordBot for kleeBux",
+            "HahAH me BUfF lIKE bIG YOutubeDodoo :loading:"
+        ],
+
+        "status": "You.. and {guildSize} servers",
+        "cooldown": "ÆUGH :blowfish: you can run this command again in: `{cooldown} seconds` :binge:"
+    }
+}
