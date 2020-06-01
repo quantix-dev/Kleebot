@@ -20,6 +20,7 @@
 require('dotenv').config()
 
 const Discord = require("discord.js"),
+	  langManager = require("./langManager.js"),
 	  config = require("./config.json"),
 	  fs = require("fs");
 
@@ -72,10 +73,26 @@ const bot = new Discord.Client({disableEveryone: true});
 
 // OTHER EVENTS
 function updateData() {
-	bot.user.setPresence({game: { name: `you.. and ${bot.guilds.size} server(s)`, type: 'WATCHING' }, status: 'dnd'});
+	langManager.updateTranslation(bot, "{guildSize}", bot.guilds.size)
+	bot.user.setPresence({game: { name: langManager.accessMSG(bot, "status"), type: 'WATCHING' }, status: 'dnd'});
 }
 
-bot.on("guildCreate", () => {
+bot.on("guildCreate", guild => {
+	let channelID;
+    let channels = guild.channels;
+    channelLoop:
+    for (let c of channels) {
+        let channelType = c[1].type;
+        if (channelType === "text") {
+            channelID = c[0];
+            break channelLoop;
+        }
+    }
+
+    let channel = bot.channels.get(guild.systemChannelID || channelID);
+	channel.send(langManager.accessMSG(bot, "firstMessage"));
+	channel.send(langManager.accessMSG(bot, "joinMessages"));
+	
 	updateData();
 });
 
@@ -85,12 +102,13 @@ bot.on("guildDelete", () => {
 
 
 bot.on("ready", () => {
-	updateData();
 	bot.generateInvite(["ADMINISTRATOR"]).then(console.log);
 	
 	console.log("\n\n---------------------------------")
 	console.log("Powered by Qubit / Quantix")
 	console.log(`Logged in as ${bot.user.tag}\n`);
+	
+	updateData();
 });
 
 /*---------------------------------------------------------------------------
@@ -119,7 +137,8 @@ bot.on("message", (message) => {
 	let userCooldown = cooldowns.get(key)
 	if (userCooldown) {
 		var cooldown = Math.round((userCooldown - Date.now()) / 1000)
-		message.channel.send(`ÆUGH :blowfish: you can run this command again in: \`\`${cooldown} seconds.\`\``).catch()
+		langManager.updateTranslation(bot, "{cooldown}", cooldown)
+		message.channel.send(langManager.accessMSG(bot, "cooldown")).catch()
 		return;
 	}
 

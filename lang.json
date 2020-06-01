@@ -1,6 +1,6 @@
 {
     "messages": {
-        "firstMessage": ":cursedJoy: **Neyoh!**\n~~  ~~ Me thanks you for invite me to server!\n~~  ~~ u do `-help` for big help!",
+        "firstMessage": ":cursedJoy: **Neyoh!**\n~~  ~~ Me thanks you for invite me to server!\n~~  ~~ u do `-help` for big help!\n~~  ~~ #StayHomeSaveLives. nEyoh!",
 
         "joinMessages": [
             "I just poopood myselffyy!! :poop:",
@@ -9,15 +9,16 @@
             "HeLLO ME Here NOW!!",
             "HahEHE.",
             "OH nOOo my NapPY iS full of big stnker!! :trashMan: :poop:",
-            "ÆUGH :blowfish:",
+            "ÆUGH :pufferfish:",
             "Oi YOu You GoiNG to Do thE BIg bingo!!!",
             "Me Say HOlA tO THe French People!!",
             "MEin ufO Has bE Stuck in the big blue :binge:",
             "Will DiscordBot for kleeBux",
-            "HahAH me BUfF lIKE bIG YOutubeDodoo :loading:"
+            "HahAH me BUfF lIKE bIG YOutubeDodoo :loading:",
+			"The LiIIght THe lIiight"
         ],
 
-        "status": "You.. and {guildSize} servers",
-        "cooldown": "ÆUGH :blowfish: you can run this command again in: `{cooldown} seconds` :binge:"
+        "status": "you",
+        "cooldown": "ÆUGH :pufferfish: you can run this command again in: `{cooldown} seconds` :Toby:"
     }
 }

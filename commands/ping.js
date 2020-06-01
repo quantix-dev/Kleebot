@@ -17,8 +17,6 @@
 var connectionX = null
 const Discord = require("discord.js")
 
-const bingeEmoji = "<:binge:625054771174440981>"
-
 module.exports.run = async (bot, message, args) => {
 	// Code in here.
 	const m = await message.channel.send(`Loading... `).catch()
@@ -30,7 +28,7 @@ module.exports.run = async (bot, message, args) => {
 	
 	if (averagePing  >= 100) {
 		if (averagePing >= 500) {
-			message.channel.send(`NeYOH the ping is **WAy** HiGh! ${bingeEmoji} `).catch()
+			message.channel.send(langManager.accessEMOJI(bot, "NeYOH the ping is **WaY** HiIgh!! :binge:")).catch()
 			return;
 		}
 
