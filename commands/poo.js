@@ -1,5 +1,5 @@
 /*    
-	  purge.js - purges X amount of messages from a channel
+    poo.js - Stupid song that gives me anxiety
 	
     Copyright (C) 2020  QuantixOfficial
     This program is free software: you can redistribute it and/or modify
