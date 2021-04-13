@@ -1,4 +1,5 @@
 # Kleebot - Dev Branch
+# THIS BOT IS NOW DEPRECATED, A NEW VERSION IS IN PRODUCTION
 
 ## What is kleebot?
 Kleebot is a simple bot that I am using to train and sculpt my discord.js skills.
